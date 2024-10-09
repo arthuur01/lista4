@@ -86,7 +86,49 @@ public class lista4 {
 		} while (opcao.equalsIgnoreCase("s") || opcao.equalsIgnoreCase("sim"));
 		System.exit(0);
 		}
-			
-	}
+		public static void questao3() {
+	String continuar;
+	do {
+		String entrada;
+		int nota,salario,sexo,idade;
+		
+		do {
+			entrada = JOptionPane.showInputDialog("Nota:");
+			nota = Integer.parseInt(entrada);
+			if(nota > 10 || nota < 0) {
+				 JOptionPane.showMessageDialog(null, "Nota inválida");
+			}
+		
+	}while (nota < 0 || nota > 10);
+	 do {
+		 entrada = JOptionPane.showInputDialog("Salario:");
+		 salario = Integer.parseInt(entrada);
+		 if(salario < 0) {
+			 JOptionPane.showMessageDialog(null, "Inválido");
+		 }
+	 }while(salario < 0);
+	 do {
+		 entrada = JOptionPane.showInputDialog("Sexo:");
+		 sexo = entrada.toLowerCase().charAt(0);
+		  if (sexo != 'm' && sexo != 'f') {
+              JOptionPane.showMessageDialog(null, "inválido");
+          }
+	 }while(sexo != 'm' && sexo != 'f');
+	do {
+		entrada = JOptionPane.showInputDialog("Idade:");
+		idade = Integer.parseInt(entrada);
+		if(idade > 120 || idade < 0) {
+			 JOptionPane.showMessageDialog(null, "inválida");
+		}
+	
+}while (idade < 0 || idade > 120);
+	JOptionPane.showMessageDialog(null, "Sucesso!!");
+	
+	 continuar = JOptionPane.showInputDialog("Deseja continuar? (S)im ou (N)ão");
+	 
+ }while(continuar.equalsIgnoreCase("s") || continuar.equalsIgnoreCase("sim"));
+	System.exit(0);
+	}	
+}
 	
 
