@@ -86,7 +86,7 @@ public class lista4 {
 		} while (opcao.equalsIgnoreCase("s") || opcao.equalsIgnoreCase("sim"));
 		System.exit(0);
 		}
-		public static void questao3() {
+	public static void questao3() {
 	String continuar;
 	do {
 		String entrada;
