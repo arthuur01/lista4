@@ -1,5 +1,3 @@
-# lista4
-
 # Atividade Professor Wesley
 # Nome
 Arthur Miguel Vieira Mapa
